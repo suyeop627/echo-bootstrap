@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/name: echo
 spec:
-#  replicas: 1
+  #  replicas: 1
   replicas: 2 #변경 부분 - flux 배포 태스트
   selector:
     matchLabels:
@@ -34,4 +34,4 @@ spec:
               containerPort: 80
         - name: echo
           #Image automation controller가 변경사항을 인식하기 위해 필요
-          image: ghcr.io/suyeop627/echo:v0.1.0-slim # {"$imagepolicy": "flux-system:echo"}
+          image: ghcr.io/suyeop627/echo:v0.1.0-1-g7a10f68-slim # {"$imagepolicy": "flux-system:echo"}
