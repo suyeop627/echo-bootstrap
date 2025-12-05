@@ -33,4 +33,5 @@ spec:
             - name: http
               containerPort: 80
         - name: echo
-          image: ghcr.io/jpubdocker/echo:v0.1.0-slim
+          #Image automation controller가 변경사항을 인식하기 위해 필요
+          image: ghcr.io/suyeop627/echo:v0.1.0-slim # {"$imagepolicy": "flux-system:echo"}
