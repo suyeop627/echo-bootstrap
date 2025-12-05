@@ -5,7 +5,8 @@ metadata:
   labels:
     app.kubernetes.io/name: echo
 spec:
-  replicas: 1
+#  replicas: 1
+  replicas: 2 #변경 부분 - flux 배포 태스트
   selector:
     matchLabels:
       app.kubernetes.io/name: echo
